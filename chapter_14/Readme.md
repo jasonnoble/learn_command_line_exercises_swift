@@ -1,21 +1,18 @@
 
-# Chapter 15: Pipes and Redirection
+# Chapter 16: Wildcard Matching
 
 ## Do More
 
-### Create some more index cards for memorizing these three symbols. Write the symbol on one side, then what it does on the other side. Drill these just like the other commands.
+### Add the * to your deck of flash cards. On the back write: "matches anything in a wildcard like *.txt".
 
-`|` redirects output to another command
-`<` reads STDIN from the file on the right
-`>` writes STDOUT to the file on the right (will replace the file)
-`>>` writes STDOUT to the file on the right (appending)
+Okay!
 
 ## English Questions
 
-### Can you put "This class is fun" into bar.txt?
+### Can you output all the txt files in this directory?
 
-`echo 'This class is fun' > bar.txt`
+`cat *.txt`
 
-### Can you put "Oh so much fun" into foo.txt?
+### Show me the content of the text files in slash temp.
 
-`echo 'Oh so much fun' > foo.txt`
+`cat /tmp/*.txt`
