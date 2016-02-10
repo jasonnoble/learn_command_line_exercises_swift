@@ -1,30 +1,21 @@
 
-# Chapter 14: Removing a file (rm)
+# Chapter 15: Pipes and Redirection
 
 ## Do More
 
-### Clean up everything in temp from all the exercises so far.
+### Create some more index cards for memorizing these three symbols. Write the symbol on one side, then what it does on the other side. Drill these just like the other commands.
 
-`rm -rf tmp`
+`|` redirects output to another command
+`<` reads STDIN from the file on the right
+`>` writes STDOUT to the file on the right (will replace the file)
+`>>` writes STDOUT to the file on the right (appending)
 
-### Write in your notebook to be careful when running recursive remove on files.
-
-It'll nuke all your files!!!! :(
-    
 ## English Questions
 
-### Can you remove blah.txt?
+### Can you put "This class is fun" into bar.txt?
 
-Sure. `rm blah.txt`
+`echo 'This class is fun' > bar.txt`
 
-### Let's get rid of our development log file.
+### Can you put "Oh so much fun" into foo.txt?
 
-`rm log/development.log`
-
-### Can you remove everything in the slash temp slash foo directory?
-
-`rm -rf /tmp/foo`
-    
-### Why is it dangerous to run "rm -rf /"
-
-It would recursively remove your entire hard drive.
+`echo 'Oh so much fun' > foo.txt`
